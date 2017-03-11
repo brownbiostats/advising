@@ -1,0 +1,302 @@
+# Site settings
+baseurl = "http://127.0.0.1:4321/"
+languageCode = "en-us"
+title = "Advising @ Brown Biostatistics"
+theme = "agency"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Brown Biostats"
+  description = "Advising Program at Brown Biostatistics department. "
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "Advising at Brown Biostatistics"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "Quick Info"
+    portfolio = "Group Meetings"
+    about = "About"
+    team = "Advisors"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Testing"
+    #  weight = 3
+
+   
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome To "
+    subtitle = "Advising at Brown Biostats!"
+    buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Basic Information"
+    subtitle = "Here is some basic information on your meetings. "
+
+    [[params.services.row]]
+    
+    
+     [[params.services.row.list]]
+      icon = "fa-info"
+      title = "Description"
+      description = "The idea of this advising program is to create a more unified structure for advising our master's students as well as to give each student the chance to start exploring a research topic much earlier than they typically do. Students will meet with their advisors during small group sessions and will deliver brief presentations during 3 of these meetings.  "
+
+    [[params.services.row.list]]
+      icon = "fa-map-marker"
+      title = "Location"
+      description = "We will meet on the dates given below from 3-4pm in ***Room 408***. "
+
+   
+
+    [[params.services.row.list]]
+      icon = " fa-check-circle"
+      title = "Attendance"
+      description = "Attendance will be require at all sessions. Student's who cannot make the session need to have notified the advisor in advance and make alternative arrangements. "
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.portfolio.modal]
+      date = "Dates"
+      category = "Topic"
+      buttonText = "Close Meeting!"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "About"
+    subtitle = "This is a brief outline of what we will be doing."
+    endpoint = "You <br> are ready <br> to start!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "introduction.jpg"
+      date = "March 1, 2017"
+      title = "Introduction to Meetings and Group"
+      description = "This is the first meeting. We will meet as a large group and discuss the format for this time. We will discuss what a thesis/project is, what our meetings will be like and address questions you might have.  "
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = "March 15 and 22 "
+      title = "Topics in Biostatistics, Health Data Science or Public Health."
+      description = "This session will be the first formal presentation. Students will discuss topics in Biostatistics, Health Data Science or Public Health. Each student will focus on an individual topic which will is of interest to them.  "
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = "April 5"
+      title = "Ask the experts!"
+      description = "During this session students will get a chance to talk with 1-2 students who are currently engaged in their own thesis/project work. This will give students a chance to discuss selecting advisors, how to set up meetings, tips current students wished they had known before starting their thesis, etc..."
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "April 12 and 19"
+      title = "Who are our faculty?"
+      description = "This will be students final formal presentation. With every group having 5-6 students in it, students will have the opportunity to learn more about 5-6 faculty members research interests. This will give students a deeper view of the department. If you choose to come to the other groups meetings you may then hear about all faculty."
+      
+      
+      [[params.about.events]]
+      img = "5.jpg"
+      date = "April 26 and May 3"
+      title = "What is a Thesis/Project and How do you find the right advisor?"
+      description = "The purpose of this discussion is to begin thinking further about a thesis or project that students may want to work on. In previous meetings they have learned from previous students and even interviewed faculty members. This is their chance to discuss expectations of the Department's thesis/project and to begin to figure out who they may want to work with. "
+
+
+ [[params.about.events]]
+      img = "6.jpg"
+      date = "May 10 and 17"
+      title = "Preparing your Thesis Proposal"
+      description = "This meeting will be a group discussion. The goal of this is  for students to  learn about the thesis/project proposal that will be due at the end of the summer."
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "Your Advisors"
+    subtitle = "Currently there is just one advisor. In the future this will be a team."
+    description = "These advisors will be leading your small group sessions throughout your first year."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "Sullivan_4.jpg"
+      name = "Adam J Sullivan, PhD"
+      position = "Assistant Professor of Biostatistics"
+      livesIn = "[Providence, RI](#some-maps-url)"
+      scope = [
+        "Director of [Masters Programs](https://www.brown.edu/academics/public-health/biostatistics/educational-programs/masters-program)",
+        "Faculty Statistician for [Hassenfeld Child Health Innovation Institute](https://www.brown.edu/initiatives/child-health/)",
+        
+      ]
+      
+      social = [
+      ["fa-github", "https://github.com/sulivanstatistics"],
+        ["fa-twitter", "https://www.twitter.com/sullivanstats"],
+        ["fa-linkedin", "https://www.linkedin.com/in/sullivanstats/"]
+      ]
+
+    
+
+
+  # Client section
+    [params.clients_list]
+      enable = false
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    buttonText = "Send message"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "your@email.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Copyright of BrownBiostats 2017."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "https://twitter.com/BrownBiostats"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "https://www.facebook.com/BiostatisticsAtBrown"
+
+    [[params.footer.social]]
+      icon = "fa-google-plus-official"
+      link = "https://plus.google.com/102177062112836493427"
+
+    
